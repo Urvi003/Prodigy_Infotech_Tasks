@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: #11141a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header:hover{
+    background-color: brown;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+ nav a { 
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #0ef;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f242d;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+}
+section :hover,
+section.active{
+    color: palegoldenrod;
+    font-family: Cambria;
+    font-size: 70px;
+}
+section a{
+    margin-left: 50%;
+    text-decoration: none;
+    color: white;
+}
+#linkedin{
+    height: 300px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-image: url("Linkedin.jpeg") ;
+} 
+#linkedin:hover{
+    background-size: 120%;
+    -webkit-transition: all 0.3s ease-in;
+}
+#website{
+    min-height: 150vh;
+    background-image: url("internship.png") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.website{
+    margin-left: 50%;
+    margin-bottom: 40%;
+    text-decoration: none;
+    color: black;
+}
+
+section:nth-child(odd) {
+    background: #323946;
+}
